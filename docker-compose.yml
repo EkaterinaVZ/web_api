@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  web:
+    build: streamlit_app
+    ports:
+      - "8501:8501"
+  api:
+    build: ml_fastapi
+    ports:
+      - "8000:8000"
